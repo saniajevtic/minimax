@@ -8,6 +8,11 @@
 def minimax (curDepth, nodeIndex,
              maxTurn, scores,
              targetDepth):
+    # curDepth is depth/level where game starts e.g. 0 is at root nodeIndex
+    # nodeIndex is index of current node e.g. 0 is root nodeIndex
+    # maxTurn = True means you are the maximising player (else minimizing)
+    # scores is a list of scores of the final (target) player
+    # targetDepth is the depth/level of the final (score) layer
 
     # base case : targetDepth reached
     if (curDepth == targetDepth):
